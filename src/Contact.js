@@ -33,7 +33,7 @@ const Contact = () => {
     }
   `;
 
-  return <Wrapper></Wrapper>;
+  return <Wrapper>This is contact page.</Wrapper>;
 };
 
 export default Contact;
