@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
+import { FiShoppingCart } from "react-icons/fi";
+import { CgMenu, CgClose } from "react-icons/cg";
 
 const Nav = () => {
     const Nav = styled.nav`
@@ -179,7 +181,15 @@ const Nav = () => {
                         Contact
                     </NavLink>
                 </li>
+                <li>
+                    <NavLink to="/cart" className="navbar-link cart-trolley--link">
+                        <FiShoppingCart className="cart-trolley" />
+                        <span className="cart-total--item"> 10 </span>
+                    </NavLink>
+                </li>
             </ul>
+            {/* Two button for open and close of menu */}
+
         </div>
     </Nav>
 };
