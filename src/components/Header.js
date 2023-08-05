@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 import {NavLink} from "react-router-dom";
+import Nav from './Nav';
 
 const Header = () => {
     return (<MainHeader>
         <NavLink to="/">
             <img src="./images/logo.png" alt="my logo img"/>
         </NavLink>
+        <Nav/>
     </MainHeader>);
 };
 const MainHeader = styled.header`
